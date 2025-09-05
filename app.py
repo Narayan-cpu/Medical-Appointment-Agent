@@ -30,9 +30,7 @@ LOCATIONS = ["Main Clinic", "Downtown Office", "Uptown Branch"]
 
 load_dotenv()
 
-# -----------------------
-# Email Configuration
-# -----------------------
+
 EMAIL_ENABLED = os.getenv("EMAIL_ENABLED", "true").lower() == "true"
 EMAIL_USER = os.getenv("EMAIL_USER", "")
 EMAIL_PASS = os.getenv("EMAIL_PASS", "")
