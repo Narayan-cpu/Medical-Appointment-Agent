@@ -11,7 +11,7 @@ import streamlit as st
 from typing import Callable, Dict
 from twilio.rest import Client
 
-
+#source raga/Scripts/activate
 PATIENT_FILE = "patients.csv"
 SCHEDULE_FILE = "schedule.xlsx"
 FINAL_FILE = "final.xlsx"
@@ -30,7 +30,9 @@ LOCATIONS = ["Main Clinic", "Downtown Office", "Uptown Branch"]
 
 load_dotenv()
 
-
+# -----------------------
+# Email Configuration
+# -----------------------
 EMAIL_ENABLED = os.getenv("EMAIL_ENABLED", "true").lower() == "true"
 EMAIL_USER = os.getenv("EMAIL_USER", "")
 EMAIL_PASS = os.getenv("EMAIL_PASS", "")
