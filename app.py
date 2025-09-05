@@ -11,9 +11,7 @@ import streamlit as st
 from typing import Callable, Dict
 from twilio.rest import Client
 
-# -----------------------
-# Files & Config
-# -----------------------
+
 PATIENT_FILE = "patients.csv"
 SCHEDULE_FILE = "schedule.xlsx"
 FINAL_FILE = "final.xlsx"
