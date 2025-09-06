@@ -20,7 +20,7 @@ SLOT_START = time(10, 0)
 SLOT_END = time(21, 0)
 SLOT_STEP_MIN = 30
 
-# New patient gets 60 min slots, recurring gets 30 min
+
 NEW_PATIENT_DURATION = 60  # minutes
 RECURRING_PATIENT_DURATION = 30  # minutes
 
@@ -207,9 +207,7 @@ def book_appointment_slot(day: date, start_time: str, patient_name: str, duratio
         st.error(f"Error booking appointment: {e}")
         return False
 
-# -----------------------
-# Patient helpers
-# -----------------------
+
 def patient_lookup(name: str, dob: str):
     """Check if patient exists in database."""
     try:
