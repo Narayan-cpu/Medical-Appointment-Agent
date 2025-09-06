@@ -345,9 +345,7 @@ def send_sms(to_number: str, message: str):
         st.error(f"SMS error: {e}")
         return False
 
-# -----------------------
-# Parsers
-# -----------------------
+
 def parse_patient_text(text: str):
     """Parse patient information from text input."""
     name_match = re.search(r"name[:\-]?\s*([A-Za-z][A-Za-z\s.'-]+)", text, re.IGNORECASE)
