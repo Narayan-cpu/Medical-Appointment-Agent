@@ -73,7 +73,6 @@ PATIENT_NOTIFY_PHONE=default_patient_phone_number
     - Open the local Streamlit URL (usually [http://localhost:8501](http://localhost:8501)).
 
 ---
-
 ## 💬 How It Works
 
 ### 1. **Greeting & Patient Info**
