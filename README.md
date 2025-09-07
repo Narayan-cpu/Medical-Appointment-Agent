@@ -4,7 +4,7 @@ This application is a **Streamlit-based medical appointment agent** designed to 
 
 ---
 
-## 🚀 Features
+## 🚀 Features :
 
 - **Conversational Booking**: Patients interact step-by-step to provide information, choose dates and times, and confirm appointments.
 - **Patient Management**: Handles both new and recurring patients, storing essential details in a CSV database.
