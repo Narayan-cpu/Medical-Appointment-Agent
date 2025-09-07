@@ -1,4 +1,4 @@
-# 🏥 Medical Appointment Scheduling Agent
+# 🏥 Medical Appointment Scheduling Agent :
 
 This application is a **Streamlit-based medical appointment agent** designed to automate the scheduling process for clinics and healthcare providers. It guides patients (new or returning) through a conversational flow to book appointments, select doctors and locations, manage patient data, and send notifications via **email** and **SMS**.
 
