@@ -17,7 +17,7 @@ This application is a **Streamlit-based medical appointment agent** designed to 
 
 ---
 
-## 🗂️ File Structure
+## 🗂️ File Structure :
 
 - `patients.csv`: Stores registered patient details.
 - `schedule.xlsx`: Manages daily appointment slots and bookings.
@@ -25,7 +25,7 @@ This application is a **Streamlit-based medical appointment agent** designed to 
 
 ---
 
-## ⚙️ Configuration
+## ⚙️ Configuration :
 
 All sensitive credentials and options are loaded via environment variables using a `.env` file.
 
@@ -46,7 +46,7 @@ PATIENT_NOTIFY_PHONE=default_patient_phone_number
 
 ---
 
-## 🛠️ Setup & Usage
+## 🛠️ Setup & Usage :
 
 1. **Clone the Repository**
     ```bash
@@ -100,7 +100,7 @@ PATIENT_NOTIFY_PHONE=default_patient_phone_number
 
 ---
 
-## 📋 Example Conversation
+## 📋 Example Conversation :
 
 ```
 👋 Welcome to the Medical Appointment Scheduler!
