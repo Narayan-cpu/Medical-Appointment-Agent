@@ -36,18 +36,14 @@ EMAIL_PASS = os.getenv("EMAIL_PASS", "")
 EMAIL_SMTP_SERVER = "smtp.gmail.com"
 EMAIL_SMTP_PORT = 587
 
-# -----------------------
-# SMS Configuration
-# -----------------------
+
 SMS_ENABLED = os.getenv("ENABLE_SMS", "true").lower() == "true"
 TWILIO_ACCOUNT_SID = os.getenv("TWILIO_SID", "")
 TWILIO_AUTH_TOKEN = os.getenv("TWILIO_AUTH", "")
 TWILIO_PHONE_NUMBER = os.getenv("TWILIO_PHONE", "")
 PATIENT_NOTIFY_PHONE = os.getenv("PATIENT_NOTIFY_PHONE", "")
 
-# -----------------------
-# File helpers
-# -----------------------
+
 def ensure_files():
     if not os.path.exists(PATIENT_FILE):
         pd.DataFrame(columns=["name", "dob", "email", "phone"]).to_csv(PATIENT_FILE, index=False)
@@ -64,7 +60,7 @@ def ensure_files():
         ]
         pd.DataFrame(columns=cols).to_excel(FINAL_FILE, index=False)
 
-    # Normalize any existing rows in SCHEDULE_FILE to HH:MM
+  
     try:
         df = pd.read_excel(SCHEDULE_FILE, dtype={"time": str, "date": str})
         if not df.empty:
