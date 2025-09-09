@@ -24,15 +24,12 @@ SLOT_STEP_MIN = 30
 NEW_PATIENT_DURATION = 60  # minutes
 RECURRING_PATIENT_DURATION = 30  # minutes
 
-# Doctor & Location lists
 DOCTORS = ["Dr. Smith", "Dr. Johnson", "Dr. Lee"]
 LOCATIONS = ["Main Clinic", "Downtown Office", "Uptown Branch"]
 
 load_dotenv()
 
-# -----------------------
-# Email Configuration
-# -----------------------
+
 EMAIL_ENABLED = os.getenv("EMAIL_ENABLED", "true").lower() == "true"
 EMAIL_USER = os.getenv("EMAIL_USER", "")
 EMAIL_PASS = os.getenv("EMAIL_PASS", "")
